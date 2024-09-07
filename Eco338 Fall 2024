@@ -17,6 +17,6 @@ install.packages("ggplot2")
 library(ggplot2)
 ggplot(data=USGDP,mapping=aes(x= GDPvalue))+geom_histogram()
 #fill colors according to year
-ggplot(data=USGDP,mapping=aes(x= GDPvalue))+geom_histogram()
+ggplot(data=USGDP,mapping=aes(x= GDPvalue, fill = Year))+geom_histogram(color = "white")
 #line chart
 ggplot(GDP, aes(x=GDP))
