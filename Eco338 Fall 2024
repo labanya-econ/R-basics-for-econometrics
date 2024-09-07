@@ -1,0 +1,22 @@
+R for Eco 338 Fall 2024 Agnes Scott College (classroom commands)
+read.csv("/Users/labyroy/Desktop/Eco 338/GDP.csv")
+USGDP<-read.csv("/Users/labyroy/Desktop/Eco 338/GDP.csv")
+View(USGDP)
+head(USGDP)
+ncol(USGDP)
+nrow(USGDP)
+#column names #row names not applicable here because it is a time series data
+colnames(USGDP)
+#rename column name
+colnames(USGDP)<-c("Year","GDPvalue")
+colnames(USGDP)
+#basic statistics
+summary(GDP)
+#visualization
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(data=USGDP,mapping=aes(x= GDPvalue))+geom_histogram()
+#fill colors according to year
+ggplot(data=USGDP,mapping=aes(x= GDPvalue))+geom_histogram()
+#line chart
+ggplot(GDP, aes(x=GDP))
